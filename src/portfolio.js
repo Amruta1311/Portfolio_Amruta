@@ -3,6 +3,7 @@
 // To change portfolio colors globally go to the  _globalColor.scss file
 
 import emoji from "react-easy-emoji";
+import { Icon } from '@iconify/react';
 
 // Summary And Greeting Section
 
@@ -12,12 +13,12 @@ const illustration = {
 
 const greeting = {
   username: "Amruta Mulay",
-  title: "Bonjour!",
+  title: "Hey!",
   subTitle: emoji(
-    "I am Amruta - a Full Stack Software Developer working at JP Morgan Chase. Innovation is my passion 🚀 and with every line of code, I aspire to make a difference✨"
+    "Welcome to my corner of the internet🤗 I'm Amruta - a full-stack software developer currently pursuing my master's degree in Computer Science from the University of Southern California. Innovation is my passion 🚀 and with every line of code, I aspire to make a difference✨"
     ),
   resumeLink:
-    "https://drive.google.com/file/d/1ZA7b8_WAYJmqPcFxs8mqvQ0YIMqJNZJn/view?usp=sharing", // Set to empty to hide the button
+    "https://drive.google.com/file/d/1EfP_-bK296aIvZC-oe4Flowr9FNqV6Oc/view?usp=sharing", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -27,7 +28,7 @@ const socialMediaLinks = {
   github: "https://github.com/Amruta1311",
   linkedin: "https://www.linkedin.com/in/amruta-mulay-48804316b/",
   medium: "https://amruta1311.medium.com/",
-  gmail: "amruta13mulay11@gmail.com",
+  gmail: "aamulay@usc.edu",
   researchGate: "https://www.researchgate.net/profile/Amruta-Mulay",
   // Instagram, Twitter and Kaggle are also supported in the links!
   // To customize icons and social links, tweak src/components/SocialMedia
@@ -40,31 +41,19 @@ const skillsSection = {
   title: "Tech Stack",
   subTitle: emoji( "MY CURIOSITY ALLOWS ME TO EXPLORE THE TECHNICAL DIVERSITIES ⚡" ),
   skills: [
-    emoji(
-      "➡ Develop interactive User Interfaces for web applications along with robust backend APIs"
-    ),
-    emoji("➡ Built an Ethereum-based application that promotes the fundamentals of Blockchain Technology"),
-    emoji(
-      "➡ Designed Machine Learning algorithms for analyzing business world problems"
-    )
+    // emoji(
+    //   "➡ Develop interactive User Interfaces for web applications along with robust backend APIs"
+    // ),
+    // emoji("➡ Built an Ethereum-based application that promotes the fundamentals of Blockchain Technology"),
+    // emoji(
+    //   "➡ Designed Machine Learning algorithms for analyzing business world problems"
+    // )
   ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
 https://fontawesome.com/icons?d=gallery */
 
   softwareSkills: [
-    {
-      skillName: "html-5",
-      fontAwesomeClassname: "fab fa-html5"
-    },
-    {
-      skillName: "css3",
-      fontAwesomeClassname: "fab fa-css3-alt"
-    },
-    {
-      skillName: "JavaScript",
-      fontAwesomeClassname: "fab fa-js"
-    },
     {
       skillName: "cpp",
       fontAwesomeClassname: "fab fa-cuttlefish"
@@ -82,8 +71,24 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fas fa-database"
     },
     {
-      skillName: "Solidity",
-      fontAwesomeClassname: "fab fa-stripe-s"
+      skillName: "git",
+      fontAwesomeClassname: "fab fa-git-alt"
+    },
+    {
+      skillName: "Amazon AWS",
+      fontAwesomeClassname: "fab fa-aws"
+    },
+    {
+      skillName: "html-5",
+      fontAwesomeClassname: "fab fa-html5"
+    },
+    {
+      skillName: "css3",
+      fontAwesomeClassname: "fab fa-css3-alt"
+    },
+    {
+      skillName: "JavaScript",
+      fontAwesomeClassname: "fab fa-js"
     },
     {
       skillName: "reactjs",
@@ -94,6 +99,10 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fab fa-npm"
     },
     {
+      skillName: "Solidity",
+      fontAwesomeClassname: "fab fa-stripe-s"
+    },
+    {
       skillName: "angularJS",
       fontAwesomeClassname: "fab fa-angular"
     },
@@ -101,7 +110,6 @@ https://fontawesome.com/icons?d=gallery */
       skillName: "PHP",
       fontAwesomeClassname: "fab fa-php"
     }
-
   ],
   display: true // Set false to hide this section, defaults to true
 };
@@ -111,19 +119,19 @@ https://fontawesome.com/icons?d=gallery */
 const educationInfo = {
   display: true, // Set false to hide this section, defaults to true
   schools: [
-    // {
-    //   schoolName: "Harvard University",
-    //   logo: require("./assets/images/harvardLogo.png"),
-    //   subHeader: "Master of Science in Computer Science",
-    //   duration: "September 2017 - April 2019",
-    //   desc: "Participated in the research of XXX and published 3 papers.",
-    //   descBullets: [
-    //     "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-    //     "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-    //   ]
-    // },
     {
-      schoolName: "Sardar Vallabhbhai National Institute of Technology, Surat",
+      schoolName: "University of Southern California, Los Angeles, California",
+      logo: require("./assets/images/usc.jpeg"),
+      subHeader: "Master of Science in Computer Science",
+      duration: "August 2022 - May 2024",
+      // desc: "Participated in the research of XXX and published 3 papers.",
+      // descBullets: [
+      //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+      // ]
+    },
+    {
+      schoolName: "Sardar Vallabhbhai National Institute of Technology, Surat, India",
       logo: require("./assets/images/SVNIT.png"),
       subHeader: "Bachelor of Technology in Computer Engineering",
       duration: "August 2017 - June 2021",
@@ -171,12 +179,16 @@ const workExperiences = {
       role: "Software Engineer",
       company: "JP Morgan Chase & Co.",
       companylogo: require("./assets/images/jpmc.jpeg"),
-      date: "July 2021 - Present",
-      desc: "I work as a software developer to build applications in Java and Springboot.",
+      date: "July 2021 - July",
+      desc: "Worked in the Finance domain on a front office trading application as a Full stack developer using Java, Springboot, ReactJS, and other cutting-edge technologies. Implemented end-to-end development that includes -      ",
       descBullets: [
-        "Developed a trading app simulator that handles the buying and selling of different stocks to maximise profit.",
-        "Built a Java application that virtualizes the server to handle dynamic API requests and responses for fast, robust and comprehensive testing.",
-        "Designed a user interface performing CRUD operations for this Java application using ReactJS for the business clients to call these API requests efficiently."
+        // "Developed a trading app simulator that handles the buying and selling of different stocks to maximise profit.",
+        // "Built a Java application that virtualizes the server to handle dynamic API requests and responses for fast, robust and comprehensive testing.",
+        // "Designed a user interface performing CRUD operations for this Java application using ReactJS for the business clients to call these API requests efficiently.",
+        "Developed a virtualized server to handle dynamic API requests and responses for robust, and comprehensive testing. Built a user interface to perform CRUD operations using ReactJS for the business clients to call the API requests efficiently.",
+        "Designed, developed, tested, modified, and implemented application code. Made standard modifications to existing software applications and modules as per high-level specifications, application support, and industry standards. Followed a test-driven development approach to provide maximum code coverage and deliver a quality product. Experience in detecting and recovering the failures in the application using various tools such as Geneos, Splunk, Control M, etc.",
+        "Developed a Monitoring system that sends email alerts if any external connection fails."
+
       ]
     },
     {
@@ -184,10 +196,12 @@ const workExperiences = {
       company: "Tech for Social Good Initiative by JPMC",
       companylogo: require("./assets/images/ffg3.png"),
       date: "June 2020 – July 2020",
-      desc: "JPMC host hackathons at their global technology centres for students to work side by side with its employees and use their skills to solve real-world problems for nonprofit organisations.",
+      desc: "JPMC hosts hackathons at their global technology centers for students to work side by side with its employees and use their skills to solve real-world problems for non-profit organisations.",
       descBullets: [
         " I participated in Tech For Social Good hackathon to collaborate with other coders and develop innovative technology solutions for the NGO, AIM Foundation.",
         " Me and my team worked on different frameworks to build an e-learning platform focused on adaptive learning that helps user to learn at their own pace.",
+        "Developed a learning management system that allows students to learn at their own pace as well as teachers to administer, track and report student performance, along with the feature to upload educational courses.",
+        "Analyzed, designed, developed, tested and deployed the final web application within 3 weeks on Amazon AWS EC2 instance for the client to use the application instantly."
       ] 
     },
     // {
@@ -278,7 +292,7 @@ const achievementSection = {
       footerLink: [
         {
           name: "Certificate",
-          url: "https://drive.google.com/file/d/1hJOlgxFIxhxJ2kuGTTVibZ5JAHDpgR0w/view?usp=sharing"
+          url: "https://drive.google.com/file/d/1zJYfEd27UMxG-i2jttIi26vOJkocJYh_/view?usp=sharing"
         }
       ]
     },
@@ -291,7 +305,7 @@ const achievementSection = {
         // {name: "Certification", url: ""},
         {
           name: "Merit Certificate",
-          url: "https://drive.google.com/file/d/1EZKmxoqIiZhFdb-cdeC3aevL_X6MQ08-/view?usp=sharing"
+          url: "https://drive.google.com/file/d/1mOwzEyvX9ldBN6gZ117URfTu1QRD2lZR/view?usp=sharing"
         }
       ]
     }
@@ -304,7 +318,7 @@ const achievementSection = {
 const blogSection = {
   title: "Blogs",
   subtitle:
-    "With Love for Developing cool stuff, I love to write and teach others what I have learnt.",
+    "With the Love for developing applications, I also enjoy writing and sharing new knowledge that I have learnt!",
   displayMediumBlogs: "true", // Set true to display fetched medium blogs instead of hardcoded ones
   // blogs: [
   //   {
