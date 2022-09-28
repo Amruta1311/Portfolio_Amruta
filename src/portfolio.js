@@ -13,12 +13,12 @@ const illustration = {
 
 const greeting = {
   username: "Amruta Mulay",
-  title: "Hey!",
+  title: "Hello World!",
   subTitle: emoji(
-    "Welcome to my corner of the internet🤗 I'm Amruta - a full-stack software developer currently pursuing my master's degree in Computer Science from the University of Southern California. Innovation is my passion 🚀 and with every line of code, I aspire to make a difference✨"
-    ),
+    "Welcome to my little corner of the internet! I'm Amruta - a full-stack software developer currently pursuing my Master's degree in Computer Science from the University of Southern California. Innovation is my passion and with every line of code, I aspire to make a difference✨"
+      ),
   resumeLink:
-    "https://drive.google.com/file/d/1EfP_-bK296aIvZC-oe4Flowr9FNqV6Oc/view?usp=sharing", // Set to empty to hide the button
+    "https://drive.google.com/file/d/1monjFy76pDKdGhgO2lbHw694VtqORkYJ/view", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -179,7 +179,7 @@ const workExperiences = {
       role: "Software Engineer",
       company: "JP Morgan Chase & Co.",
       companylogo: require("./assets/images/jpmc.jpeg"),
-      date: "July 2021 - July",
+      date: "July 2021 - July 2022",
       desc: "Worked in the Finance domain on a front office trading application as a Full stack developer using Java, Springboot, ReactJS, and other cutting-edge technologies. Implemented end-to-end development that includes -      ",
       descBullets: [
         // "Developed a trading app simulator that handles the buying and selling of different stocks to maximise profit.",
